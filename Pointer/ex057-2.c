@@ -1,0 +1,17 @@
+#include <stdio.h>
+main()
+{
+	int tbl[][3] = { {10,20,30},
+					{40, 50, 60},
+					{70,80,90} };
+
+	int* p_tbl, i;
+	p_tbl = &tbl[0][1]; //&tbl[0][0]‚à‚¤‚¨‚Á‚¯--
+	printf("2ŽŸŒ³”z—ñtbl‚Ì“à—e\n");
+	for (i = 0; i < 3; i++)
+	{
+		printf("%3d ", *(p_tbl+3*i));
+	}
+
+
+}
